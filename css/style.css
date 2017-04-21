@@ -29,4 +29,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+#home-content-box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
