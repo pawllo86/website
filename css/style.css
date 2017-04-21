@@ -1,0 +1,32 @@
+/*  
+==================================================
+    Default values 
+    
+    Font family: Roboto Condensed
+    
+    Greenish Blue : #34c6d3
+    Steel Gray    : #41464b
+    Blue Boyoux   : #64707b
+==================================================
+*/
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Home */
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url("../img/ball.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
