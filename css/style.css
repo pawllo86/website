@@ -9,12 +9,42 @@
     Blue Boyoux   : #64707b
 ==================================================
 */
-html, body {
+
+html,
+body {
     height: 100%;
 }
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* General Styles*/
+
+.btn-general {
+    border-width: 2px;
+/*    border-radius: 0;*/
+    padding: 12px 26px;
+    font-weight: 400;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #fff;
+    color: #41464b;
+}
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Home */
@@ -23,18 +53,41 @@ body {
     height: 100%;
 }
 
+.home-pattern {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/pattern.png);
+    background-repeat: repeat;
+    opacity: 0.2;
+}
+
 #home-cover {
     height: 100%;
     background-image: url("../img/ball.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    animation-delay: .1s;
+    animation-duration: .5s;
 }
 
 #home-content-box {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#home-content-box h3 {
+    color: #fff;
+    font-size: 8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation-delay: .5s;
+    animation-direction: .5s;
+}
+
+#home-content-box a {
+    animation-delay: .1s;
+    animation-direction: .5s;
 }
