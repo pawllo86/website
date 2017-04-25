@@ -22,9 +22,19 @@ body {
 
 /* General Styles*/
 
+h3 {
+    color: #41464b;
+}
+
+p {
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
 .btn-general {
     border-width: 2px;
-/*    border-radius: 0;*/
+    /*    border-radius: 0;*/
     padding: 12px 26px;
     font-weight: 400;
 }
@@ -46,6 +56,26 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+
+.content-box {
+    padding: 16px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+.contnet-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #34c6d3;
+    margin: 0 auto 30px auto;
+}
+
 
 /* Home */
 
@@ -90,4 +120,45 @@ body {
 #home-content-box a {
     animation-delay: .1s;
     animation-direction: .5s;
+}
+
+
+/* Services */
+
+.service-item {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-item i {
+    color: #34c6d3;
+    float: left;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.service-item:hover i {
+    color: #fff;
+    background-color: #34c6d3;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.service-item p {
+    margin: 0;
+    padding-left: 25px;
+}
+
+/* About */
+.about-content-box {
+    float: left;
+    height: 700px;
+    display: flex;
+    flex-flow: column;
+    align-content: space-between;
 }
