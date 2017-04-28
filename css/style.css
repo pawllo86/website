@@ -50,6 +50,17 @@ p {
     color: #41464b;
 }
 
+.btn-blue {
+    border-color: #34c6d3;
+    color: #34c6d3;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: #34c6d3;
+    color: #fff;
+}
+
 .bg-parallax {
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,7 +69,10 @@ p {
 }
 
 .content-box {
-    padding: 16px 0;
+    min-height: 700px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .content-title h3 {
@@ -96,7 +110,7 @@ p {
 
 #home-cover {
     height: 100%;
-    background-image: url("../img/ball.jpg");
+    background-image: url("../img/fifa.jpg");
     display: flex;
     align-items: center;
     animation-delay: .1s;
@@ -155,10 +169,26 @@ p {
 }
 
 /* About */
-.about-content-box {
+#about-bg-diagonal {
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url("../img/ball.jpg");
+    border-top: 700px solid transparent;
+    border-left: 200px solid white
+}
+
+#about-content-box {
     float: left;
     height: 700px;
     display: flex;
     flex-flow: column;
-    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+/* WORK */
+.row.no-gutter [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
 }
