@@ -1,5 +1,24 @@
 /* Services */
-$(function() {
+$(function () {
     // initialize on scroll
     new WOW().init();
+});
+
+/* Work */
+$(function () {
+    $('#work').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery: { enabled:true }
+    });
+});
+
+/* Team */
+$(function() {
+   $("#team-members").owlCarousel({
+       nav: true,
+       autoplay: true,
+       loop: true,
+       smartSpeed: 1000
+   }); 
 });
