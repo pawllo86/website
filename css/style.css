@@ -69,7 +69,8 @@ p {
 }
 
 .content-box {
-    min-height: 700px;
+    /*    min-height: 700px;*/
+    padding: 60px 0 60px 0;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -83,11 +84,40 @@ p {
     margin: 0 0 30px 0;
 }
 
+.content-title-white h3 {
+    color: #fff;
+}
+
 .contnet-title-underline {
     width: 30px;
     height: 3px;
     background-color: #34c6d3;
     margin: 0 auto 30px auto;
+}
+
+.social-list {
+    padding-left: 0;
+}
+
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.social-icon i {
+    font-size: 20px;
+}
+
+.icon-gray i {
+    color: #64707b;
+}
+
+.icon-gray i:hover {
+    color: #34c6d3;
 }
 
 
@@ -168,7 +198,9 @@ p {
     padding-left: 25px;
 }
 
+
 /* About */
+
 #about-bg-diagonal {
     width: 60%;
     height: 700px;
@@ -187,7 +219,9 @@ p {
     justify-content: center;
 }
 
+
 /* WORK */
+
 .row.no-gutter [class*=col-] {
     padding-left: 0;
     padding-right: 0;
@@ -197,11 +231,98 @@ p {
     overflow: hidden;
 }
 
-.img-wrapper img{
+.img-wrapper img {
     transition: transform .5s ease;
 }
 
-.img-wrapper img:hover{
+.img-wrapper img:hover {
     transform: scale(1.5);
     cursor: zoom-in;
+}
+
+
+/* Team */
+
+.team-member {
+    margin: 0 15px;
+}
+
+.team-member-info {
+    padding: 10px 0 30px 0;
+}
+
+h4.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h4.team-member-designation {
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+
+/* Testimonials */
+
+#testimonials-cover {
+    background-image: url("../img/fifa.jpg");
+}
+
+#testimonials .content-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#customer-testimonials {
+    padding: 50px 0;
+}
+
+.testimonial img {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.testimonial blockquote {
+    border: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: #fff;
+    padding: 6px 150px;
+    position: relative;
+}
+
+.testimonial blockquote p {
+    color: #fff;
+}
+
+.testimonial blockquote::before,
+.testimonial blockquote::after {
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    height: 30px;
+    position: absolute;
+}
+
+.testimonial blockquote::before {
+    content: "\201C";
+    top: 0;
+    left: 100px;
+}
+
+.testimonial blockquote::after {
+    content: "\201D";
+    bottom: 0;
+    right: 100px;
+}
+
+.testimonial-author p {
+    color: #fff;
+    font-size: 17px;
+}
+
+.testimonial-author p strong {
+    display: block;
 }

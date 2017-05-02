@@ -9,16 +9,30 @@ $(function () {
     $('#work').magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
         type: 'image',
-        gallery: { enabled:true }
+        gallery: {
+            enabled: true
+        }
     });
 });
 
 /* Team */
-$(function() {
-   $("#team-members").owlCarousel({
-       nav: true,
-       autoplay: true,
-       loop: true,
-       smartSpeed: 1000
-   }); 
+$(function () {
+    $("#team-members").owlCarousel({
+        nav: true,
+        autoplay: true,
+        loop: true,
+        smartSpeed: 1000,
+        autoplayHoverPause: true
+    });
+});
+
+/* Testimonial */
+$(function () {
+    $("#customer-testimonials").owlCarousel({
+        items: 1,
+        autoplay: true,
+        loop: true,
+        smartSpeed: 1000,
+        autoplayHoverPause: true
+    });
 });
