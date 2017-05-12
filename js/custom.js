@@ -18,7 +18,6 @@ $(function () {
 /* Team */
 $(function () {
     $("#team-members").owlCarousel({
-        nav: true,
         autoplay: true,
         loop: true,
         smartSpeed: 1000,
@@ -42,5 +41,16 @@ $(function() {
     $(".counter").counterUp({
         delay: 10,
         time: 3000
+    });
+});
+
+/* Client */
+$(function () {
+    $("#clients-list").owlCarousel({
+        items: 5,
+        autoplay: true,
+        loop: true,
+        smartSpeed: 1000,
+        autoplayHoverPause: true
     });
 });

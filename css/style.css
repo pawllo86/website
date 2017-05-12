@@ -34,7 +34,7 @@ p {
 
 .btn-general {
     border-width: 2px;
-    /*    border-radius: 0;*/
+    border-radius: 0;
     padding: 12px 26px;
     font-weight: 400;
 }
@@ -120,6 +120,13 @@ p {
     color: #34c6d3;
 }
 
+.icon-white i {
+    color: #fff;
+}
+
+.icon-white i:hover {
+    color: #34c6d3;
+}
 
 /* Home */
 
@@ -414,4 +421,47 @@ ul.pricing-spec li p {
     text-transform: uppercase;
     font-weight: 300;
     margin-top: 0px;
+}
+
+/* Clients */
+.client {
+    padding: 40px 20px;
+}
+
+/* Contact */
+footer {
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0,0,0,0.1);
+}
+
+#contact-left h3, #contact-right h3 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#contact-left p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+address {
+    color: #fff;
+}
+
+address strong,
+#phone-fax-email strong {
+    letter-spacing: 1px;
+}
+
+form .form-control {
+    background: transparent;
+    border-radius: 0;
+    border-color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: #fff;
 }
