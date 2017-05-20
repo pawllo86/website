@@ -47,7 +47,7 @@ $(function() {
 /* Client */
 $(function () {
     $("#clients-list").owlCarousel({
-        items: 5,
+        items: 3,
         autoplay: true,
         loop: true,
         smartSpeed: 1000,

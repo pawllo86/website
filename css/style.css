@@ -147,7 +147,7 @@ p {
 
 #home-cover {
     height: 100%;
-    background-image: url("../img/fifa.jpg");
+    background-image: url("../img/slide1.jpg");
     display: flex;
     align-items: center;
     animation-delay: .1s;
@@ -212,7 +212,7 @@ p {
     width: 60%;
     height: 700px;
     float: right;
-    background-image: url("../img/ball.jpg");
+    background-image: url("../img/slide2.jpg");
     border-top: 700px solid transparent;
     border-left: 200px solid white
 }
@@ -275,7 +275,7 @@ h4.team-member-designation {
 /* Testimonials */
 
 #testimonials-cover {
-    background-image: url("../img/fifa.jpg");
+    background-image: url("../img/computer.jpg");
 }
 
 #testimonials .content-box {
@@ -392,8 +392,9 @@ ul.pricing-spec li p {
 }
 
 /* Stats */
+
 #stats-cover {
-    background-image: url("../img/eagle.jpg");
+    background-image: url("../img/computer.jpg");
 }
 
 #stats .content-box {
@@ -426,6 +427,9 @@ ul.pricing-spec li p {
 /* Clients */
 .client {
     padding: 40px 20px;
+    height: 250px;
+    display: flex;
+    align-items: center;
 }
 
 /* Contact */
@@ -439,6 +443,13 @@ footer {
     color: #fff;
     font-size: 27px;
     font-weight: 700;
+}
+
+#contact-info {
+    background-image: url(../img/world-map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #contact-left p {
@@ -464,4 +475,45 @@ form .form-control {
     padding: 8px 16px;
     margin-bottom: 20px;
     color: #fff;
+}
+
+/* Footer */
+#footer-bottom {
+    background-color: rgba(0,0,0,0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-menu {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#footer-menu ul li {
+    display: inline-block;
+}
+
+#footer-menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#footer-menu a:hover {
+    color: #34c6d3;
 }
