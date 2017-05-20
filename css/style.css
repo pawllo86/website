@@ -427,7 +427,7 @@ ul.pricing-spec li p {
 /* Clients */
 .client {
     padding: 40px 20px;
-    height: 250px;
+    height: 300px;
     display: flex;
     align-items: center;
 }
