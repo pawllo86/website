@@ -1,3 +1,14 @@
+/* Navigation */
+$(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() < 50) {
+            $("nav").removeClass("nav-menu-bar");
+        } else {
+            $("nav").addClass("nav-menu-bar");
+        }
+    });
+});
+
 /* Services */
 $(function () {
     // initialize on scroll
