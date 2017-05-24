@@ -133,7 +133,6 @@ p {
 .navbar {
     padding: 5px 80px;
     transition: all .5s ease-in-out;
-    background-color: rgba(0,0,0,0.2);
 }
 
 .navbar a.navbar-brand {
@@ -149,8 +148,12 @@ p {
     transform: scale(0.75,0.75);
 }
 
-.navbar-nav > li > a {
+.nav-menu-bar > .container-fluid > .navbar-collapse > .navbar-nav > li > a {
     color: #fff;
+}
+
+.navbar-nav > li > a {
+    color: #000;
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -226,6 +229,15 @@ p {
     animation-direction: .5s;
 }
 
+#home-content-box h4 {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation-delay: 1s;
+    animation-direction: .5s;
+}
+
 #home-content-box a {
     animation-delay: .1s;
     animation-direction: .5s;
@@ -238,6 +250,7 @@ p {
     padding: 20px 0;
     margin-bottom: 20px;
     cursor: pointer;
+    min-height: 190px;
 }
 
 .service-item i {
@@ -506,7 +519,7 @@ footer {
 #contact-info {
     background-image: url(../img/world-map.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
