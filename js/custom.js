@@ -1,3 +1,28 @@
+/* Navigation */
+$(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() < 50) {
+            $("nav").removeClass("nav-menu-bar");
+            $("#back-to-top").fadeOut();
+        } else {
+            $("nav").addClass("nav-menu-bar");
+            $("#back-to-top").fadeIn();
+        }
+    });
+});
+
+$(function() {
+    $("a.smooth-scroll").click(function(event) {
+        event.preventDefault();
+        
+        var section = $(this).attr("href");
+        
+        $("html, body").animate({
+            scrollTop: $(section).offset().top - 80
+        }, 1250, "easeInOutExpo");
+    });
+})
+
 /* Services */
 $(function () {
     // initialize on scroll
@@ -6,7 +31,7 @@ $(function () {
 
 /* Work */
 $(function () {
-    $('#work').magnificPopup({
+    $("#work").magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
         type: 'image',
         gallery: {
