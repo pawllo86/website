@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="91">
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="81">
   
     <!--  NAVIGATION  -->
     
@@ -42,16 +42,16 @@
                 </div>
                 <div id="nav-menu-items" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#service">Zabiegi</a></li>
-                        <li><a href="#about">O Nas</a></li>
-                        <li><a href="#work">Galeria</a></li>
-                        <li><a href="#team">Zalecenia</a></li>
-                        <li><a href="#testimonials">Opinie</a></li>
-                        <li><a href="#pricing">Cennik</a></li>
-                        <li><a href="#stats">Liczby</a></li>
-                        <li><a href="#clients">Partnerzy</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a class="smooth-scroll" href="#home">Home</a></li>
+                        <li><a class="smooth-scroll" href="#service">Zabiegi</a></li>
+                        <li><a class="smooth-scroll" href="#about">O Nas</a></li>
+                        <li><a class="smooth-scroll" href="#work">Galeria</a></li>
+                        <li><a class="smooth-scroll" href="#team">Zalecenia</a></li>
+                        <li><a class="smooth-scroll" href="#testimonials">Opinie</a></li>
+                        <li><a class="smooth-scroll" href="#pricing">Cennik</a></li>
+                        <li><a class="smooth-scroll" href="#stats">Liczby</a></li>
+                        <li><a class="smooth-scroll" href="#clients">Partnerzy</a></li>
+                        <li><a class="smooth-scroll" href="#contact">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -66,7 +66,7 @@
             <div id="home-content-box">
                 <h3 class="animated zoomIn">Gabinet Fizjoterapii</h3>
                 <h4 class="animated zoomIn">Zdrowie masz tylko jedno, zadbaj o nie razem z nami</h4>
-                <a class="btn btn-lg btn-primary btn-general animated bounceInDown" href="#work" role="button" title="Nasz oferta">Sprawdź Nas!</a>
+                <a class="btn btn-lg btn-primary btn-general animated bounceInDown smooth-scroll" href="#service" role="button" title="Nasz oferta">Sprawdź Nas!</a>
             </div>
         </div>
     </section>
@@ -141,7 +141,7 @@
                         <p>Nie chcesz czekać w długich kolejkach, zadzwoń do nas i umów się na wizytę. Zrobimy to szybko i w przystępnej cenie.</p>
                     </div>
                     <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                        <a class="btn btn-lg btn-general btn-blue ml-auto" role="button" href="#work">Kontakt</a>
+                        <a class="btn btn-lg btn-general btn-blue ml-auto smooth-scroll" role="button" href="#contact">Kontakt</a>
                     </div>
 
                 </div>
@@ -425,7 +425,7 @@
         <div id="stats-cover" class="bg-parallax">
             <div class="content-box">
                 <div class="content-title content-title-white wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-                    <h3>Nasze statystyki</h3>
+                    <h3>Zadowolenie klientów przedewszystkim</h3>
                     <div class="contnet-title-underline"></div>
                 </div>
                 <div class="container">
@@ -441,7 +441,7 @@
                             <div class="stats-item">
                                 <i class="fa fa-shield fa-5x"></i>
                                 <h2><span class="counter">100</span><span>%</span></h2>
-                                <p>Bezpieczna</p>
+                                <p>Bezpieczeństwa</p>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -561,19 +561,23 @@
                     <div class="col-md-6">
                         <div id="footer-menu">
                             <ul>
-                                <li><a href="#home">Home</a>/</li>
-                                <li><a href="#service">Zabiegi</a>/</li>
-                                <li><a href="#work">Galeria</a>/</li>
-                                <li><a href="#team">Zalecenia</a>/</li>
-                                <li><a href="#testimonials">Opinie</a>/</li>
-                                <li><a href="#pricing">Cennik</a>/</li>
-                                <li><a href="#stats">Liczby</a></li>
+                                <li><a class="smooth-scroll" href="#home">Home</a>/</li>
+                                <li><a class="smooth-scroll" href="#service">Zabiegi</a>/</li>
+                                <li><a class="smooth-scroll" href="#work">Galeria</a>/</li>
+                                <li><a class="smooth-scroll" href="#team">Zalecenia</a>/</li>
+                                <li><a class="smooth-scroll" href="#testimonials">Opinie</a>/</li>
+                                <li><a class="smooth-scroll" href="#pricing">Cennik</a>/</li>
+                                <li><a class="smooth-scroll" href="#stats">Liczby</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-blue btn-back-to-top smooth-scroll" title="Home" role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
     </footer>
 
     <script src="js/jquery.js"></script>
@@ -583,6 +587,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/easing.js"></script>
     <script src="js/custom.js"></script>
 </body>
 

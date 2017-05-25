@@ -160,7 +160,10 @@ p {
     font-weight: 700;
 }
 
-.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+.navbar-nav > li > a:hover, 
+.navbar-nav > li > a:focus,
+.nav-menu-bar > .container-fluid > .navbar-collapse > .navbar-nav > li > a:hover,
+.nav-menu-bar > .container-fluid > .navbar-collapse > .navbar-nav > li > a:focus {
     background: none;
     color: #34c6d3;
 }
@@ -180,7 +183,8 @@ p {
     overflow: hidden;
 }
 
-.nav-menu-bar ul.navbar-nav > li.active > a {
+.nav-menu-bar ul.navbar-nav > li.active > a,
+.nav-menu-bar > .container-fluid > .navbar-collapse > .navbar-nav > li.active > a{
     color: #34c6d3;
 }
 
@@ -587,4 +591,13 @@ form .form-control {
 
 #footer-menu a:hover {
     color: #34c6d3;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 3px 15px;
+    display: none;
 }
