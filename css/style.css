@@ -170,7 +170,7 @@ p {
 
 .navbar-toggle {
     background-color: rgba(0,0,0,0.1);
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 0px;
 }
 
@@ -326,26 +326,36 @@ p {
 /* Team */
 
 .team-member {
-    margin: 0 15px;
+    margin: 0 0;
 }
 
 .team-member-info {
-    padding: 10px 0 30px 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-h4.team-member-name {
-    font-size: 22px;
-    font-weight: 700;
+.team-member-info > ul {
+    list-style: none;
+    padding-left: 10px;
 }
 
-h4.team-member-designation {
+.team-member-info > ul > li {
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.team-member-info > ul > li::before {
+  content: "■";
+  color: #34c6d3;
+  margin-right: 15px;
+}
+
+.team-member-info > p > strong {
     color: #34c6d3;
-    font-size: 15px;
-    font-weight: 700;
-    font-style: italic;
-    letter-spacing: 1px;
 }
-
 
 /* Testimonials */
 
@@ -521,7 +531,7 @@ footer {
 }
 
 #contact-info {
-    background-image: url(../img/world-map.png);
+    background-image: url(../img/contact-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
