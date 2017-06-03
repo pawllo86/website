@@ -23,6 +23,12 @@ $(function() {
     });
 })
 
+$(function() {
+    $(".navbar-collapse ul li a").on("click touch", function() {
+        $(".navbar-toggle").click();
+    })
+});
+
 /* Services */
 $(function () {
     // initialize on scroll
@@ -73,10 +79,20 @@ $(function() {
 /* Client */
 $(function () {
     $("#clients-list").owlCarousel({
-        items: 3,
         autoplay: true,
         loop: true,
         smartSpeed: 1000,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            }
+        }
     });
 });

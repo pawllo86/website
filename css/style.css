@@ -137,6 +137,7 @@ p {
 
 .navbar a.navbar-brand {
     padding: 0 15px;
+    height: 80px;
 }
 
 .nav-menu-bar {
@@ -170,7 +171,7 @@ p {
 
 .navbar-toggle {
     background-color: rgba(0,0,0,0.1);
-    border: 1px solid #000;
+    border: 1px solid #fff;
     border-radius: 0px;
 }
 
@@ -189,8 +190,12 @@ p {
 }
 
 #nav-menu-items {
-    padding: 15px 0;
     float: right;
+    margin-top: 15px;
+}
+
+.navbar-toggle {
+    margin-top: 23px;
 }
 
 /* Home */
@@ -252,7 +257,6 @@ p {
 
 .service-item {
     padding: 20px 0;
-    margin-bottom: 20px;
     cursor: pointer;
     min-height: 190px;
 }
